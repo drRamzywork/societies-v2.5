@@ -1,0 +1,32 @@
+// .icon_container {
+//   @media screen and (max-width: 992px) {
+//     padding: 0px !important;
+//     width: 39px;
+//     height: 37px;
+//     border-radius: 17.13px !important;
+
+//     img {
+//       width: 18.45px;
+//       height: 18.45px;
+//     }
+//   }
+// }
+
+button.btn_container {
+  // background: #2f4f9e;
+  display: flex;
+
+  padding: 14.49px 15px 14.49px 15px;
+  // gap: 8.85px;
+  border-radius: 24.14px;
+
+  p {
+    font-family: Cairo;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+    border-left: 1px solid #000;
+    padding-left: 4.85px;
+  }
+}
