@@ -68,6 +68,7 @@ const LandingV1 = () => {
                   <img src="/imgs/youtube.svg" alt="" />
                   <img src="/imgs/instagram.svg" alt="" />
                   <img src="/imgs/facebook2.svg" alt="" />
+                  <img src="/imgs/snapchat.png" alt="" />
                 </div>
               </div>
 
@@ -82,7 +83,15 @@ const LandingV1 = () => {
           <div className={styles.imgs_container}>
             <motion.img initial={{ opacity: 0, y: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.5, type: "tween" }} src={"/imgs/bg/1.png"} alt="" />
+              transition={{ duration: 1.5, type: "tween" }}
+              className={styles.desktop}
+              src={"/imgs/bg/1.png"} alt="" />
+
+            <motion.img initial={{ opacity: 0, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5, type: "tween" }}
+              className={styles.mobile}
+              src={"/imgs/map_phone.png"} alt="" />
 
           </div>
 

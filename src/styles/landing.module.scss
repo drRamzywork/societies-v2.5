@@ -14,13 +14,21 @@ section.landing {
     width: 100%;
     height: 100%;
     padding: 49px;
+    @media screen and (max-width: 992px) {
+      padding: 16px;
+    }
     .text_container {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       flex-grow: 1;
       justify-content: center;
-
+      @media screen and (max-width: 992px) {
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 150px;
+      }
       .title {
         display: flex;
         flex-direction: row-reverse;
@@ -33,12 +41,19 @@ section.landing {
           display: inline-block;
           border-radius: 50%;
           display: flex;
+          @media screen and (max-width: 992px) {
+            width: 30px;
+            height: 30px;
+          }
           .blue {
             margin: auto;
             width: 28px;
             height: 28px;
             border: 6px solid #2f4f9e;
             border-radius: 50%;
+            @media screen and (max-width: 992px) {
+              border: 6px solid #2f4f9e;
+            }
           }
         }
         h1 {
@@ -48,6 +63,9 @@ section.landing {
           line-height: 119.94px;
           text-align: left;
           color: white;
+          @media screen and (max-width: 992px) {
+            font-size: 49.62px;
+          }
         }
       }
 
@@ -61,6 +79,9 @@ section.landing {
           line-height: 50.34px;
           text-align: right;
           margin-right: 50px;
+          @media screen and (max-width: 992px) {
+            font-size: 28.38px;
+          }
         }
       }
 
@@ -129,6 +150,18 @@ section.landing {
           height: 100vh;
         }
       }
+
+      .desktop {
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+
+      .mobile {
+        @media screen and (min-width: 992px) {
+          display: none;
+        }
+      }
     }
     .map_container {
       position: absolute;
@@ -138,9 +171,17 @@ section.landing {
       z-index: 3;
       cursor: pointer;
       z-index: 999;
+
+      @media screen and (max-width: 992px) {
+        transform: translate(-1%, 13%);
+      }
       img {
         width: 550px;
         height: 450px;
+        @media screen and (max-width: 992px) {
+          width: unset;
+          height: unset;
+        }
       }
     }
     .layer {
